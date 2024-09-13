@@ -4,7 +4,7 @@ function redirect_to_nonexistent_page()
 
   $new_login =  'replace_with_a_random_string';
   if (strpos($_SERVER['REQUEST_URI'], $new_login) === false) {
-    wp_safe_redirect(home_url('PageAdminPasIci'), 302);
+    wp_safe_redirect(home_url('noadminpagehere'), 302);
     exit();
   }
 }
